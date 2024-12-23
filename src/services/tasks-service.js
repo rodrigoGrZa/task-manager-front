@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/v1/tasks";
+const API_URL = "https://task-manager-production-2e22.up.railway.app/api/v1/tasks";
 
 export const fetchTasks = async (page, size, filters = {}) => {
   const queryParams = new URLSearchParams({
