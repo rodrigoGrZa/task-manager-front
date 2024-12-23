@@ -9,7 +9,7 @@ const CheckmarkIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className={`w-4 h-4 m-auto`}
+    className={`w-6 h-6 m-auto`}
   >
     <path d="M20 6L9 17l-5-5" />
   </svg>

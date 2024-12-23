@@ -21,18 +21,18 @@ const TaskCard = ({ task }) => {
 
   return (
     <div
-      onClick={() => handleToggleComplete()}
-      className={`relative flex items-start space-x-4 bg-gray-800 text-white rounded-lg p-6 shadow-md cursor-pointer transition
+      className={`relative flex items-center space-x-4 bg-gray-800 text-white rounded-lg p-6 shadow-md cursor-pointer transition
         ${completed ? "opacity-75" : "opacity-100"} hover:bg-gray-700`}
     >
       <div
-        className={`w-6 h-6 flex-shrink-0 rounded-full border-2
+        onClick={() => handleToggleComplete()}
+        className={`w-8 h-8 flex-shrink-0 rounded-full border-2
           ${completed ? "bg-green-600 border-green-600" : "border-gray-500"}`}
       >
         {completed && <CheckmarkIcon />}
       </div>
 
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full" >
         <h3
           className={`text-2xl font-bold mb-2 ${completed ? "line-through" : ""}`}
           suppressContentEditableWarning={true}

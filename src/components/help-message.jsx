@@ -29,7 +29,7 @@ const HelpMessage = ({ onClose }) => {
 
     const instructions = [
         "Create tasks by clicking the + button.",
-        "Mark tasks as completed by clicking anywhere on the card where there's no text.",
+        "Mark tasks as completed by clicking on the circle to the left of the task.",
         "Edit tasks inline by clicking on the text. Changes will auto-save after 2 seconds of inactivity.",
     ];
 
