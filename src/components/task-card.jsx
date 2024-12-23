@@ -1,6 +1,6 @@
 import useTaskStore from "../store/useTaskStore";
 import CheckmarkIcon from "./checkmark-icon";
-import Spinner from "./Spinner";
+import Spinner from "./spinner";
 
 const TaskCard = ({ task }) => {
   const { saving, modifyTask, editTaskWithDebounce } = useTaskStore();
